@@ -1,0 +1,6 @@
+path: D:\zql\dataset\office_SSDD
+train: images/train
+val: images/val
+test:
+names:
+  0: ship
