@@ -191,8 +191,8 @@ def run(
 
 def parse_opt():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--weights', nargs='+', type=str, default=ROOT / 'runs/train/office_ssdd_yolov7/weights/best.pt', help='model path or triton URL')
-    parser.add_argument('--source', type=str, default='D:\zql\dataset\office_ssdd\images/val/001120.jpg', help='file/dir/URL/glob/screen/0(webcam)')
+    parser.add_argument('--weights', nargs='+', type=str, default=ROOT / '', help='model path or triton URL')
+    parser.add_argument('--source', type=str, default='', help='file/dir/URL/glob/screen/0(webcam)')
     parser.add_argument('--name', default='ssdd', help='save results to project/name')
     parser.add_argument('--data', type=str, default=ROOT / 'data/ssdd_opt.yaml', help='(optional) dataset.yaml path')
     parser.add_argument('--cfg', type=str, default=ROOT / '', help='model.yaml path')
