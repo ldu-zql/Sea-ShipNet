@@ -1,4 +1,4 @@
-path: D:\zql\dataset\sar-ship
+path: D:\cv\code\dataset\sar-ship
 train: images/train
 val: images/val
 test:
