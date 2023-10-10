@@ -234,7 +234,6 @@ class DyHeadBlock(nn.Module):
                 sum_feat += high_feat * self.scale_attn_module(high_feat)
                 summed_levels += 1
             outs.append(x[level]+self.task_attn_module(sum_feat / summed_levels))
-            # outs.append(self.task_attn_module(sum_feat / summed_levels))
 
         return outs
 
