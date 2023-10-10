@@ -2,7 +2,7 @@
 """
 @Time ： 2023/5/13 20:48
 @Auth ： Qinglin Zhang
-@File ：dyhead.py
+@File ：resdyhead.py
 @IDE ：PyCharm
 @Motto：ABC(Always Be Coding)
 """
@@ -134,17 +134,6 @@ class DyReLU(nn.Module):
 
 
 class DyDCNv2(nn.Module):
-    """ModulatedDeformConv2d with normalization layer used in DyHead.
-    This module cannot be configured with `conv_cfg=dict(type='DCNv2')`
-    because DyHead calculates offset and mask from middle-level feature.
-    Args:
-        in_channels (int): Number of input channels.
-        out_channels (int): Number of output channels.
-        stride (int | tuple[int], optional): Stride of the convolution.
-            Default: 1.
-        norm_cfg (dict, optional): Config dict for normalization layer.
-            Default: dict(type='GN', num_groups=16, requires_grad=True).
-    """
 
     def __init__(self,
                  in_channels,
@@ -168,10 +157,6 @@ class DyDCNv2(nn.Module):
 
 
 class DyHeadBlock(nn.Module):
-    """DyHead Block with three types of attention.
-    HSigmoid arguments in default act_cfg follow official code, not paper.
-    https://github.com/microsoft/DynamicHead/blob/master/dyhead/dyrelu.py
-    """
 
     def __init__(self,
                  in_channels,
