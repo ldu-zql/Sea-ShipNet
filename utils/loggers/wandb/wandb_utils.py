@@ -1,7 +1,4 @@
-# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
 
-# WARNING ⚠️ wandb is deprecated and will be removed in future release.
-# See supported integrations at https://github.com/ultralytics/yolov5#integrations
 
 import logging
 import os

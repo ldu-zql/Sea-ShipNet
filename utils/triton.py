@@ -1,6 +1,3 @@
-# YOLOv5 🚀 by Ultralytics, GPL-3.0 license
-""" Utils to interact with the Triton Inference Server
-"""
 
 import typing
 from urllib.parse import urlparse
